@@ -5,32 +5,19 @@ import 'package:flutter_posresto_app/data/datasource/auth_local_datasource.dart'
 import 'package:flutter_posresto_app/presentation/auth/bloc/logout/logout_bloc.dart';
 import 'package:flutter_posresto_app/presentation/auth/login_page.dart';
 
-import '../../data/models/response/auth_response_model.dart';
-
-class DashboardPage extends StatefulWidget {
-  const DashboardPage({super.key});
+class LogoutPage extends StatefulWidget {
+  const LogoutPage({super.key});
 
   @override
-  State<DashboardPage> createState() => _DashboardPageState();
+  State<LogoutPage> createState() => _LogoutPageState();
 }
 
-class _DashboardPageState extends State<DashboardPage> {
-  User? user;
-  @override
-  void initState() {
-    AuthLocalDatasource().getAuthData().then((value) {
-      setState(() {
-        user = value.user;
-      });
-    });
-    super.initState();
-  }
-
+class _LogoutPageState extends State<LogoutPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Dashboard'),
+        title: const Text('Logout Page'),
         actions: [
           BlocListener<LogoutBloc, LogoutState>(
             listener: (context, state) {
@@ -68,8 +55,8 @@ class _DashboardPageState extends State<DashboardPage> {
           ),
         ],
       ),
-      body: Center(
-        child: Text('Welcome ${user?.name ?? 'to dashboard!'}'),
+      body: const Center(
+        child: Text('logout page'),
       ),
     );
   }

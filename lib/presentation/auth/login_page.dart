@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_posresto_app/core/components/components.dart';
 import 'package:flutter_posresto_app/data/datasource/auth_local_datasource.dart';
-import 'package:flutter_posresto_app/presentation/home/dashboard_page.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_posresto_app/core/core.dart';
 
+import '../home/pages/dashboard_page.dart';
 import 'bloc/login/login_bloc.dart';
 
 class LoginPage extends StatefulWidget {

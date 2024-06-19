@@ -4,7 +4,7 @@ import 'package:flutter_posresto_app/data/datasource/auth_local_datasource.dart'
 import 'package:flutter_posresto_app/presentation/auth/bloc/login/login_bloc.dart';
 import 'package:flutter_posresto_app/presentation/auth/bloc/logout/logout_bloc.dart';
 import 'package:flutter_posresto_app/presentation/auth/login_page.dart';
-import 'package:flutter_posresto_app/presentation/home/dashboard_page.dart';
+import 'package:flutter_posresto_app/presentation/home/pages/dashboard_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'core/constants/colors.dart';
